@@ -1,0 +1,35 @@
+{
+  "name": "cat",
+  "version": "2.0.0",
+  "description": "amber's discord bot",
+  "scripts": {
+    "start": "node index.js",
+    "clear-logs": "del logs\\*.log",
+    "test": "echo \"Error: no tests\" && exit 1",
+    "lint": "eslint . --ext .js,.mjs,.cjs",
+    "fix": "eslint . --ext .js,.mjs,.cjs --fix",
+    "refresh-handler": "npm uninstall @a06000208/handler && npm install github:06000208/handler",
+    "refresh-framework": "npm uninstall @a06000208/discord-framework && npm install github:06000208/discord-framework",
+    "refresh-git-pkg": "npm uninstall @a06000208/handler @a06000208/discord-framework && npm install github:06000208/handler github:06000208/discord-framework"
+  },
+  "author": "06000208",
+  "main": "index.js",
+  "module": "index.js",
+  "type": "module",
+  "dependencies": {
+    "@a06000208/discord-framework": "github:06000208/discord-framework",
+    "@a06000208/handler": "github:06000208/handler",
+    "@discordjs/rest": "^0.5.0",
+    "@keyv/sqlite": "^3.5.2",
+    "@sapphire/ratelimits": "^2.4.4",
+    "@sapphire/snowflake": "^3.2.2",
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.1",
+    "keyv": "^4.3.2",
+    "lodash": "^4.17.21",
+    "lowdb": "^3.0.0",
+    "luxon": "^2.4.0",
+    "pino": "^8.1.0",
+    "pino-pretty": "^8.1.0"
+  }
+}
